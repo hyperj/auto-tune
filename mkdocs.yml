@@ -1,0 +1,75 @@
+# Project information
+site_name: Auto Tune
+site_description: Automatic tuning and optimization practices
+site_author: auto-tune
+site_url: https://auto-tune.github.io
+
+# Repository
+repo_name: auto-tune/auto-tune
+repo_url: https://github.com/auto-tune/auto-tune
+edit_uri: blob/master/docs
+
+# Copyright
+copyright: Copyright &copy; 2018 - <span id="cyear">2018</span> Auto Tune <script type="text/javascript">document.getElementById("cyear").innerText=new Date().getFullYear();</script>
+
+# Configuration
+theme:
+  name: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: true
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  feature:
+    tabs: true
+  palette:
+    primary: white
+    accent: amber
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Customization
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Resource tune: resource-tume.md
+
+# Analytics
+
+
